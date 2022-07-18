@@ -7,4 +7,11 @@ const cliente = {
 
 //Adicionando novas chaves a um objeto
 cliente.telefone = "947856312"
-console.log(cliente);
+
+
+//Alterando uma chave
+cliente.telefone = "987654321";
+
+
+//Removendo uma chave
+delete cliente.telefone;
