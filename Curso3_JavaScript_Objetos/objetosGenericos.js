@@ -5,7 +5,7 @@ function Cliente (nome, cpf, email, saldo) {
     this.email = email,
     this.saldo = saldo
     this.depositar = function (valor){      //método depositar
-        this.salado += valor
+        this.saldo += valor
     }
 }
 
