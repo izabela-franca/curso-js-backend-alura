@@ -1,4 +1,4 @@
-//Importando arrays
+//Importando arrays já ordenados
 const { edGalho, edFolha} = require ('./listaLivros');
 
 function juntaListas (lista1, lista2){
