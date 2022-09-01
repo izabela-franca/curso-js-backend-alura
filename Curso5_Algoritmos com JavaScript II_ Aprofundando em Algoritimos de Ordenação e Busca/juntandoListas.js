@@ -26,17 +26,21 @@ function juntaListas (lista1, lista2){
     }
 
     //Conferindo se ambas as listas foram completamente percorridas
-    while(posicaoAtualLista1 < lista1.length) {
+    while (posicaoAtualLista1 < lista1.length) {
         listaFinal[atual] = lista1[posicaoAtualLista1];
+        posicaoAtualLista1++;
         atual++;
     }
 
-    while(posicaoAtualLista2 < lista2.length) {
+    while (posicaoAtualLista2 < lista2.length) {
         listaFinal[atual] = lista2[posicaoAtualLista2];
+        posicaoAtualLista2++;
         atual++;
     }
+
+
 
     return listaFinal;
 }
 
-console.log (juntaListas(edGalho, edGalho));
+console.log(juntaListas(edGalho, edFolha));
