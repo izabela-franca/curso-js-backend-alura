@@ -1,7 +1,7 @@
 //Importando arrays já ordenados
 const { edGalho, edFolha} = require ('./listaLivros');
 
-function juntaListas (lista1, lista2){
+function juntarListas (lista1, lista2){
     
     //Inicializando variáveis
     let listaFinal = [];
@@ -43,4 +43,4 @@ function juntaListas (lista1, lista2){
     return listaFinal;
 }
 
-console.log(juntaListas(edGalho, edFolha));
+console.log(juntarListas(edGalho, edFolha));
