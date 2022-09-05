@@ -1,8 +1,8 @@
 //Importando lista
-const listaLivros = require ('./listaLivros2');
+const listaLivros2 = require('./listaLivros2');
 
 
-//Criando uma função para encontrar p número de elementos menores que o pivô
+//Criando uma função para encontrar o número de elementos menores que o pivô
 function encontrarMenores (pivo, array) {
 
     let menores = 0;
@@ -29,8 +29,8 @@ function trocarLugar(array, de, para) {
 }
 
 
-//Ordenando todos os elementos menores que o pivô
-function dividirNoPivo (pivo, array){
+// Ordenando todos os elementos menores que o pivô
+function dividirNoPivo (array){
     let pivo = array[Math.floor(array.length / 2)];
     encontrarMenores(pivo ,array);
     let valoresMenores = 0;
@@ -41,9 +41,8 @@ function dividirNoPivo (pivo, array){
             valoresMenores++;
         }
     }
-
+    
     return array;
 }
 
-console.log(dividirNoPivo(listaLivros));
-//console.log(encontrarMenores(listaLivros[2], listaLivros));
+console.log(dividirNoPivo(listaLivros2));
