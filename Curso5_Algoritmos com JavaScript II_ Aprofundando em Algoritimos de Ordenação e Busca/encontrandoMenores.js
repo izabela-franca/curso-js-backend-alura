@@ -45,4 +45,4 @@ function dividirNoPivo (array){
     return array;
 }
 
-console.log(dividirNoPivo(listaLivros2));
+module.exports = trocarLugar;
