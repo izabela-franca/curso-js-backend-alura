@@ -1,14 +1,21 @@
 //Importando bibliotecas
-const chalk = require('chalk');
-const fs = require('fs');   //lib para acessar arquivos
+import fs from 'fs';    //lib para ler arquivos em JS
+
+//Tratamento de erros
+function tratarErro(erro) {
+    throw new Error(erro.code, 'O caminho é um diretório.');
+}
 
 
 //Acessando arquivos
 function acessarArquivo(caminhoArquivo) {
     const encoding = 'utf-8';
-    fs.readFile(caminhoArquivo, encoding, (_, texto) => {
-        console.log(chalk.green(texto))
+    fs.readFile(caminhoArquivo, encoding, (erro, texto) => {
+        if (erro){
+            tratarErro(erro);
+        }
+        console.log(texto)
     });
 }
 
-acessarArquivo('./texto1md')
+acessarArquivo('./arquivos/texto1.md');
