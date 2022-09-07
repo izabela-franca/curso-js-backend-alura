@@ -7,7 +7,7 @@ function tratarErro(erro) {
 }
 
 
-//Acessando arquivos
+//Acessando arquivos de forma síncrona
 function acessarArquivo(caminhoArquivo) {
     const encoding = 'utf-8';
     fs.readFile(caminhoArquivo, encoding, (erro, texto) => {
