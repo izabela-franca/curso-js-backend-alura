@@ -12,7 +12,7 @@ function extrairLinks(texto) {
         arrayResultados.push({ [temp[1]]: temp[2] })
     }
 
-    return arrayResultados;
+    return arrayResultados.length === 0 ? 'Não há links' : arrayResultados;
 }
 
 
