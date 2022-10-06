@@ -11,7 +11,3 @@ class Admin extends User {
     return `Curso de ${nomeDoCurso} criado com ${vagas} vagas.`;
   }
 }
-
-//Criando um novo usuário a partir da classe contruída
-const novoAdmin = new Admin("Diego", "diego@email.com", "1991-09-04");
-console.log(novoAdmin.criarCurso("Node.js", "20"));
